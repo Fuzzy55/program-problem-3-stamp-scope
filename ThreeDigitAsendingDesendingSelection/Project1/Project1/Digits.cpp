@@ -34,18 +34,18 @@ void pause() {
 // MAIN
 
 void main() {
-	int calc_1, var1, var2, var3;
+	int calc_1, c, b, a;//slightly altered
 	cout << "Enter a three digit number" << endl;
 	cin >> calc_1;
-	var1 = calc_1 % 10; // far right
-	var2 = (calc_1 / 10) % 10; // middle
-	var3 = (calc_1 / 100) % 100; // far left
+	c = calc_1 % 10; // far right *slightly altered
+	b = (calc_1 / 10) % 10; // middle
+	a = (calc_1 / 10) ; // far left *altered
 
-	if ((var1 > var2) && (var2 > var3)) {
+	if ((c > b) && (b > a)) { //
 		cout << "ascending" << endl;
 	}
 
-	else if ((var3 > var2) && (var2 > var1)) {
+	else if ((a > b) && (b > c)) {
 		cout << "descending" << endl;
 	}
 	else {
